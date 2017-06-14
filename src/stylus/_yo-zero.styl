@@ -1,0 +1,216 @@
+json('color.json')
+    
+*
+  color #636366
+
+body
+  background white
+a
+  text-decoration underline
+  color #636366
+  transition all 0.3s ease
+  &:hover
+      color #F9B42D
+      
+.corner-ribbon
+    font-family 'Pacifico', cursive 
+    width 200px
+    background color-red
+    position fixed
+    top 25px
+    left -50px
+    text-align center
+    line-height 50px
+    letter-spacing 1px
+    color #f0f0f0
+    transform rotate(-45deg)
+    &.top-right
+        top 25px
+        right -50px
+        left auto
+        transform rotate(45deg)
+
+section 
+    p
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 15px;
+        line-height: 30px;
+        font-weight: 300;
+        text-align: center;
+.container
+  padding-top 100px
+
+.body-content
+  background #fff
+  padding 100px 0 120px 0
+  position relative
+  z-index 0 !important
+  & > .container
+    position relative
+    top 100px
+    padding-bottom 100px
+
+button
+  height 48px
+  width 180px
+  text-align center
+  color #fff
+  font-size 1rem
+  font-weight 200
+  background transparent
+  border 1px solid #fff
+  border-radius 2px
+  margin 20px 0
+  cursor pointer
+  transition all 0.3s ease
+  outline none
+  &:hover
+    background #75C050
+    color #fff
+  &:active
+    outline none
+
+.btn-secondary
+    border 1px solid
+    background #F1DFDB
+    color white
+    transition all 400ms ease-out 200ms 
+    &:hover
+        background #F5D6E5
+        color white
+.don
+    background #F14E75
+    &:hover
+        background #FBCED1
+.btn-recette
+  border 1px solid #75c050
+  color #75c050
+  &:hover
+    background #75c050
+    color #fff
+//couleur
+.green-color
+    color #75c050
+span.highlight
+    background-color #F14E75
+    box-shadow 2px 0 0 #F14E75, -2px 0 0 #F14E75
+    padding 2px 0
+
+
+.highlight-container:before, .highlight-container:after
+    content " "
+    display block
+    height 90%
+    width 100%
+    margin-left -3px
+    margin-right -3px
+    position absolute
+.line
+  height 1px
+  width 100%
+  background #D6D6D8
+  margin 80px 0
+
+.grid-display
+  margin 20px 0
+  [class^="col"]
+    background #FBCED1
+    border 1px solid #75c050
+    border-radius 4px
+    box-sizing border-box
+    text-align center
+    p
+      color #75c050
+      font-size 0.8rem
+
+pre
+  margin-top 30px
+  overflow auto
+  background #fff
+  border-radius 4px
+  border 1px solid #D8DCE6
+  padding 24px 0
+
+code,
+.tag,
+.el,
+.name,
+.content,
+.comment
+  font-family monospace
+  font-size 1.1rem
+  line-height 1.2rem
+  color #636366
+
+.el
+  color #75c050
+
+.name
+  color #F9B42D
+
+.content
+  color #75C050
+
+.comment
+  color #B6CAD2
+  
+.lightbox
+    display none
+    position fixed
+    z-index 999
+    width 100%
+    height 100%
+    text-align center
+    top 0
+    left 0
+    background rgba(255, 255, 255, 0.95)
+    img 
+        max-width 90%
+        max-height 80%
+        margin-top 2%
+    &:target
+        outline none
+        display block
+.img
+  background-size contain
+  background-repeat no-repeat
+
+.img-logo
+  background-image url('')
+  background-size contain
+  height 80px
+  width 80px
+  margin-bottom 60px
+  -webkit-animation: title-fall 0.75s ease;
+  -moz-animation: title-fall 0.75s ease;
+  animation: title-fall 0.75s ease;
+
+@media only screen and (min-width: 800px)
+  .jumbotron
+    height 600px
+    
+  .btn-offre
+      margin-top -100px
+      
+@keyframes pulse 
+  0% 
+    transform: scale3d(1, 1, 1)
+  
+  100%
+    transform: scale3d(1.1, 1.1, 1.1)
+  
+  100% 
+    transform: scale3d(1, 1, 1)
+    
+@keyframes AnimationName  
+        0%
+            background-position 78% 0%
+        50%
+            background-position 23% 100%
+        100%
+            background-position 78% 0%
+            
+  
+
+
+

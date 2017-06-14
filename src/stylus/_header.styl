@@ -1,0 +1,163 @@
+header
+    #title
+        padding-top 100px
+        
+    h1
+        font-family 'Source Sans Pro', sans-serif
+    h2
+        font-family: 'Pacifico', cursive;
+    img 
+        height 5rem
+        width auto
+    #header-space
+        margin-top 50px
+    .logo__nav
+        width 20px
+        height auto
+    .home
+        position fixed
+        top 0
+        left 0
+        z-index 100 !important
+        padding-top 10px
+        padding-bottom 10px
+        padding-left 40px
+        width 100vw
+        
+    .goback
+        cursor pointer
+        padding-left 20px
+        padding-right 20px
+    .dropdown-content
+        display none
+        background white
+        position absolute
+        width 100%
+        padding-top 40px
+        left 0
+        text-align center
+        border-radius 2%
+        
+        a
+            text-decoration none
+        .menu-item
+            font-size 1.5rem
+            :hover
+                text-decoration underline
+                color #3E7BFE 
+        @media (max-width: 800px)
+            .menu-item
+                font-size 1rem
+    .jumbotron
+        background linear-gradient(349deg, #FFFCF9, white)
+        background-color #FFFCF9
+        background-size 400% 400%
+        padding-bottom 80px
+        animation AnimationName 4s ease infinite
+        height 560px
+        width 100%
+        z-index 100 !important
+        h1
+            color #575051
+        h2
+            color #575051
+            font-size 1.5rem
+            margin-top 20px
+        h3
+            color #575051
+            font-size 1.7rem
+    .video
+        position fixed
+        top 50%
+        left 50%
+        z-index 1
+        min-width 100%
+        min-height 100%
+        width auto
+        height auto
+        transform translate(-50%, -50%)
+    a 
+        text-decoration none
+        transition all .2s
+    .line-vertical
+          margin-top 100px
+          height 100px
+          width 1px
+          background #cd3492
+          margin 80px 0
+    .home-announcement 
+        font-size 14px
+        font-weight 400
+        position relative
+        display inline-block
+        margin-top 25px
+        transition: all 400ms ease-out 252.356ms
+        padding 3px 12px 4px 10px
+        transform translateY(0)
+        color #47457b
+        border-radius 24px
+        background-color #fff
+        background-color rgba(255, 255, 255, .3)
+        cursor pointer
+        &:hover
+            background-color white
+            background-color rgba(255, 255, 255, .5)
+            box-shadow 0px 1px 2px 0px #E6D7D4
+            padding 3px 40px 4px 10px
+            #tooltip
+                opacity 1
+        .circle-dot 
+            float left
+            width 10px
+            height 10px
+            margin-top 5px
+            margin-right 6px
+            border-radius 24px
+            background-color #cd3492
+        .yellow
+           background-color yellow
+        .blue
+            background-color deepskyblue
+        #tooltip
+            transition: all 400ms ease-out 252.356ms
+            position absolute
+            display inline
+            padding-left 15px
+            opacity 0
+            float right
+            width 10px
+            height auto
+            color #E6D7D4 
+
+
+#alert
+    position absolute
+    padding-top 2.5rem
+    width 100%
+    background linear-gradient(349deg, #3E7BFE, #FDF66C)
+    background-size 400% 400%
+    animation AnimationName 4s ease infinite
+    p
+        font-size 0.7rem
+        color white
+
+.fade-in 
+    opacity 0  /* make things invisible upon start */
+    animation fadeIn ease-in 1 /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+    animation-fill-mode forwards  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+    animation-duration 1s
+    animation-delay 1.5s
+    
+@media only screen and (max-width: 800px)
+    header
+        #title
+            padding-top 50px
+@keyframes AnimationName  
+        0%
+            background-position 78% 0%
+        50%
+            background-position 23% 100%
+        100%
+            background-position 78% 0%
+                
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
