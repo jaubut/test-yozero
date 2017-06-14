@@ -138,7 +138,8 @@ gulp.task 'dist:copy:miscellaneous', ->
 
 gulp.task 'dist:copy', ['dist:copy:assets', 'dist:copy:miscellaneous']
 
-gulp.task 'dist:build', ['test', 'clean', 'dist:weboack', 'dist:copy', 'dist:pug']
+gulp.task 'dist:build', ->
+  runSequence 'test', 'clean', ['dist:webpack', 'dist:copy'], 'dist:pug'
 
 gulp.task 'dist', ['dist:build']
 
