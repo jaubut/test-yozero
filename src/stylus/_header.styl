@@ -1,12 +1,12 @@
 header
     #title
         padding-top 100px
-        
+
     h1
         font-family 'Source Sans Pro', sans-serif
     h2
         font-family: 'Pacifico', cursive;
-    img 
+    img
         height 5rem
         width auto
     #header-space
@@ -23,7 +23,7 @@ header
         padding-bottom 10px
         padding-left 40px
         width 100vw
-        
+
     .goback
         cursor pointer
         padding-left 20px
@@ -37,14 +37,14 @@ header
         left 0
         text-align center
         border-radius 2%
-        
+
         a
             text-decoration none
         .menu-item
             font-size 1.5rem
             :hover
                 text-decoration underline
-                color #3E7BFE 
+                color #3E7BFE
         @media (max-width: 800px)
             .menu-item
                 font-size 1rem
@@ -76,7 +76,7 @@ header
         width auto
         height auto
         transform translate(-50%, -50%)
-    a 
+    a
         text-decoration none
         transition all .2s
     .line-vertical
@@ -85,7 +85,7 @@ header
           width 1px
           background #cd3492
           margin 80px 0
-    .home-announcement 
+    .home-announcement
         font-size 14px
         font-weight 400
         position relative
@@ -106,7 +106,7 @@ header
             padding 3px 40px 4px 10px
             #tooltip
                 opacity 1
-        .circle-dot 
+        .circle-dot
             float left
             width 10px
             height 10px
@@ -127,7 +127,7 @@ header
             float right
             width 10px
             height auto
-            color #E6D7D4 
+            color #E6D7D4
 
 
 #alert
@@ -141,23 +141,23 @@ header
         font-size 0.7rem
         color white
 
-.fade-in 
+.fade-in
     opacity 0  /* make things invisible upon start */
     animation fadeIn ease-in 1 /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
     animation-fill-mode forwards  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
     animation-duration 1s
     animation-delay 1.5s
-    
+
 @media only screen and (max-width: 800px)
     header
         #title
             padding-top 50px
-@keyframes AnimationName  
+@keyframes AnimationName
         0%
             background-position 78% 0%
         50%
             background-position 23% 100%
         100%
             background-position 78% 0%
-                
+
 @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
