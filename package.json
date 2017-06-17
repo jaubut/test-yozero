@@ -9,7 +9,6 @@
     "chai": "^3.5.0",
     "chai-things": "^0.2.0",
     "datocms-client": "^0.3.25",
-    "gulp-imagemin": "^3.3.0",
     "gulp-mocha": "^4.3.1",
     "mocha": "^3.3.0"
   },

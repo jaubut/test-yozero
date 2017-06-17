@@ -127,11 +127,6 @@ gulp.task 'dist:pug', ->
       locals: pug_data
     .pipe gulp.dest(paths.dist)
 
-gulp.task 'dist:images', ->
-    gulp.src("#{paths.src}/assets/images/*")
-        .pipe imagemin()
-        .pipe gulp.dest(paths.dist)
-
 gulp.task 'dist:copy:assets', ->
   gulp.src("#{paths.src}/assets/**/*", { base: paths.src })
     .pipe gulp.dest(paths.dist)
@@ -141,7 +136,7 @@ gulp.task 'dist:copy:miscellaneous', ->
     { base: "#{paths.src}/miscellaneous" })
     .pipe gulp.dest(paths.dist)
 
-gulp.task 'dist:copy', ['dist:copy:assets', 'dist:copy:miscellaneous', 'dist:images']
+gulp.task 'dist:copy', ['dist:copy:assets', 'dist:copy:miscellaneous']
 
 gulp.task 'dist:build', ->
   runSequence 'clean', ['dist:webpack', 'dist:copy'], 'dist:pug'
