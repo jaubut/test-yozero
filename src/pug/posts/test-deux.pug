@@ -1,0 +1,9 @@
+extends template/_default.pug
+include template/_mixins.pug
+                
+block append css
+block append hjs
+  +js('main.js')
+block contents
+    h1 Test pour mon nouveau posts
+    p Voilà c'est ça
